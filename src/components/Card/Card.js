@@ -1,5 +1,11 @@
 import React from 'react';
 
+// const onClick = () => {
+// 	'.heart'.on('click', function () {
+// 		this.toggleClass('heart-blast');
+// 	});
+// };
+
 function Card() {
 	return (
 		<>
