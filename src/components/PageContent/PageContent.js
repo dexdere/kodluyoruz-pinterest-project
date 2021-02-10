@@ -5,6 +5,7 @@ import Footer from '../Footer/Footer';
 import axios from 'axios';
 
 import PostDetail from '../Post/Post';
+import UserDetail from '../User/UserDetail';
 
 function PageContent() {
 
@@ -12,7 +13,7 @@ function PageContent() {
 
 	useEffect(() => {
 
-		axios.get(`${process.env.REACT_APP_ENDPOINT_URL}collections/2489501/photos?client_id=${process.env.REACT_APP_Unsplash_Key}`).then((res) => {
+		axios.get(`${process.env.REACT_APP_ENDPOINT_URL}photos?client_id=${process.env.REACT_APP_Unsplash_Key}&per_page=70&order_by=popular`).then((res) => {
 			setPhotoCollection(res.data);
 		})
 
@@ -40,6 +41,7 @@ function PageContent() {
 					</main>
 				</Route>
 				<Route path={`/photo/:id`} component={PostDetail} />
+				<Route path={`/user/:username`} component={UserDetail} />
 			</Switch>
 		</Router>
 			<Footer></Footer>

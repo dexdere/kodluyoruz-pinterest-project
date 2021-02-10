@@ -1,12 +1,5 @@
 import React from 'react';
-
 import { Link } from 'react-router-dom';
-
-// const onClick = () => {
-// 	'.heart'.on('click', function () {
-// 		this.toggleClass('heart-blast');
-// 	});
-// };
 
 function Card({items}) {
 
@@ -17,7 +10,7 @@ function Card({items}) {
 					<img
 						className="card-img"
 						src={`${items.urls.small}`}
-						alt="Card image"
+						alt={`${items.alt_description}`}
 					/>
 				</Link>
 				{/* <div className="overlay">
