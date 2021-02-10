@@ -17,6 +17,8 @@ function PageContent() {
 			setPhotoCollection(res.data);
 		})
 
+		document.title = "Popular Free Photos"
+
 	},[])
 
 	return (

@@ -19,7 +19,8 @@ function UserDetail() {
         axios.get(`${process.env.REACT_APP_ENDPOINT_URL}users/${username}?client_id=${process.env.REACT_APP_Unsplash_Key}`).then((res) => {
             setUsers(res.data);
        });
-        
+    
+       document.title = username + ' Photos';
 
     },[username]);
 
