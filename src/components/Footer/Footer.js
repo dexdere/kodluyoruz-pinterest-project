@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function Footer() {
 	return (
@@ -8,9 +8,15 @@ function Footer() {
 					<p>
 						©
 						<span className="credits font-weight-bold">
-							<a title="" rel="noreferrer" target="_blank" className="text-dark" href="https://www.wowthemes.net/pintereso-free-html-bootstrap-template/"><u>Pintereso Bootstrap HTML Template</u> by WowThemes.net.</a>
-							<br />
-							<a title="" rel="noreferrer" target="_blank" className="text-dark" href="https://www.unsplash.com">Photo & API Source <u>Unsplash.com</u></a>
+							<a
+								title=""
+								rel="noreferrer"
+								target="_blank"
+								className="text-dark"
+								href="https://www.unsplash.com"
+							>
+								Photo & API Source <u>Unsplash.com</u>
+							</a>
 							<br />
 							<b>Best 6th Group Ever</b>
 						</span>
@@ -18,7 +24,7 @@ function Footer() {
 				</div>
 			</footer>
 		</>
-	)
+	);
 }
 
-export default Footer
+export default Footer;
